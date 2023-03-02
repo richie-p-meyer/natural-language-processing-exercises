@@ -97,16 +97,8 @@ def get_news_articles(topic_list):
         
         json.dump(final_list, f)
         
-    return final_list    
+    return pd.DataFrame(final_list) 
 
-
-
-#Turn it into a dataframe!
-final_df = pd.DataFrame(final_list)
-final_df.head()
-
-
-# In[ ]:
 
 
 
